@@ -1,11 +1,5 @@
-__pycache__/
-.pytest_cache/
-.ruff_cache/
 .venv/
+.pytest_cache/
+__pycache__/
 .env
-*.pyc
-*.pyo
-*.log
-dist/
-build/
-.DS_Store
+enterprise_ai_resume_generator.egg-info/
