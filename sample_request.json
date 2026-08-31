@@ -1,0 +1,57 @@
+{
+  "name": "Alex Morgan",
+  "email": "alex@example.com",
+  "location": "Raleigh, NC",
+  "target_role": "Senior Data Analyst",
+  "target_job_description": "Seeking a Senior Data Analyst with SQL, Power BI, Python, dashboarding, stakeholder management, and data quality experience.",
+  "skills": [
+    "SQL",
+    "Python",
+    "Tableau",
+    "Data Analysis",
+    "Data Quality"
+  ],
+  "experience": [
+    {
+      "company": "Example Financial Services",
+      "role": "Data Analyst",
+      "start_date": "2021-01-01",
+      "current": true,
+      "responsibilities": [
+        "Analyzed operational and customer datasets",
+        "Created recurring business dashboards",
+        "Worked with stakeholders to define KPIs"
+      ],
+      "achievements": [
+        "Reduced monthly reporting effort by automating repeatable analysis workflows"
+      ],
+      "technologies": [
+        "SQL",
+        "Python",
+        "Tableau"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Executive KPI Dashboard",
+      "description": "Built an executive dashboard for operational performance.",
+      "technologies": [
+        "Tableau",
+        "SQL"
+      ],
+      "outcomes": [
+        "Improved visibility into weekly KPI trends"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Example University",
+      "degree": "Bachelor of Science",
+      "field_of_study": "Information Systems",
+      "graduation_year": 2020
+    }
+  ],
+  "certifications": []
+}

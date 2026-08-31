@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enterprise-ai-resume-generator"
+version = "1.0.0"
+description = "Enterprise-grade multi-agent AI resume generator using FastAPI, LangGraph, JWT, structured outputs, and observability."
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "fastapi>=0.116,<1.0",
+  "uvicorn[standard]>=0.35,<1.0",
+  "pydantic>=2.11,<3.0",
+  "pydantic-settings>=2.10,<3.0",
+  "email-validator>=2.2,<3.0",
+  "langchain>=1.1,<2.0",
+  "langgraph>=1.0,<2.0",
+  "langchain-openai>=1.0,<2.0",
+  "PyJWT[crypto]>=2.10,<3.0",
+  "pwdlib[argon2]>=0.2,<1.0",
+  "python-multipart>=0.0.20,<1.0",
+  "prometheus-client>=0.22,<1.0",
+  "opentelemetry-api>=1.36,<2.0",
+  "opentelemetry-sdk>=1.36,<2.0",
+  "opentelemetry-exporter-otlp-proto-grpc>=1.36,<2.0",
+  "opentelemetry-instrumentation-fastapi>=0.57b0,<1.0",
+  "httpx>=0.28,<1.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4,<9.0",
+  "pytest-asyncio>=1.1,<2.0",
+  "ruff>=0.12,<1.0"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+exclude = ["deploy*", "docs*", "scripts*", "tests*"]

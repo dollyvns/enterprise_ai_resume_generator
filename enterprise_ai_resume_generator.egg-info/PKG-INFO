@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: enterprise-ai-resume-generator
+Version: 1.0.0
+Summary: Enterprise-grade multi-agent AI resume generator using FastAPI, LangGraph, JWT, structured outputs, and observability.
+Requires-Python: <3.14,>=3.12
+Requires-Dist: fastapi<1.0,>=0.116
+Requires-Dist: uvicorn[standard]<1.0,>=0.35
+Requires-Dist: pydantic<3.0,>=2.11
+Requires-Dist: pydantic-settings<3.0,>=2.10
+Requires-Dist: email-validator<3.0,>=2.2
+Requires-Dist: langchain<2.0,>=1.1
+Requires-Dist: langgraph<2.0,>=1.0
+Requires-Dist: langchain-openai<2.0,>=1.0
+Requires-Dist: PyJWT[crypto]<3.0,>=2.10
+Requires-Dist: pwdlib[argon2]<1.0,>=0.2
+Requires-Dist: python-multipart<1.0,>=0.0.20
+Requires-Dist: prometheus-client<1.0,>=0.22
+Requires-Dist: opentelemetry-api<2.0,>=1.36
+Requires-Dist: opentelemetry-sdk<2.0,>=1.36
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc<2.0,>=1.36
+Requires-Dist: opentelemetry-instrumentation-fastapi<1.0,>=0.57b0
+Requires-Dist: httpx<1.0,>=0.28
+Provides-Extra: dev
+Requires-Dist: pytest<9.0,>=8.4; extra == "dev"
+Requires-Dist: pytest-asyncio<2.0,>=1.1; extra == "dev"
+Requires-Dist: ruff<1.0,>=0.12; extra == "dev"
