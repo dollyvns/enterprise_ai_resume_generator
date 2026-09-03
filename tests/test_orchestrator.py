@@ -9,6 +9,7 @@ from app.models.outputs import (
 )
 from app.models.profile import ResumeGenerateRequest
 from app.orchestration.graph import ResumeOrchestrator
+import pytest
 
 
 class FakeLLM:
@@ -106,3 +107,10 @@ async def test_orchestrator_reviewer_loop():
     assert response.status == "completed"
     assert response.revision_count == 1
     assert response.review.quality_score == 92
+
+
+@pytest.mark.asyncio
+async def test_orchestrator_reviewer_loop():
+    result = await some_async_function()
+
+    assert result is not None
